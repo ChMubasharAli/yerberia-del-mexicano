@@ -7,10 +7,10 @@ export default function About() {
     <>
       <Navbar />
       <main className="">
-        <section className="bg-linear-to-r from-emerald-700 to-emerald-600 text-white py-20">
+        <section className="bg-emerald-50  py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-6xl md:text-7xl font-black mb-4">Our Story</h1>
-            <p className="text-xl text-emerald-50">
+            <p className="text-xl text-slate-700">
               A Store Filled With Culture & Community
             </p>
           </div>
@@ -35,7 +35,7 @@ export default function About() {
             </div>
             <div className="rounded-xl overflow-hidden shadow-2xl ">
               <Image
-                src="/IMG_5648.webp"
+                src="/aboutImage.jpg"
                 alt="Close-up of herbal products"
                 width={500}
                 height={400}
@@ -48,7 +48,7 @@ export default function About() {
             <h2 className="text-5xl font-black text-slate-900 mb-4 text-center">
               What We Believe In
             </h2>
-            <div className="w-24 h-1 bg-linear-to-r from-emerald-600 to-blue-600 mx-auto mb-12 rounded-full"></div>
+            <div className="w-24 h-1 bg-linear-to-r from-yellow-300 to-yellow-600 mx-auto mb-12 rounded-full"></div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-emerald-50 rounded-xl p-8 shadow-lg border-l-4 border-emerald-600 hover:shadow-xl transition">
@@ -94,7 +94,7 @@ export default function About() {
             <h2 className="text-5xl font-black text-slate-900 mb-4 text-center">
               A Look Inside Our Store
             </h2>
-            <div className="w-24 h-1 bg-linear-to-r from-emerald-600 to-blue-600 mx-auto mb-12 rounded-full"></div>
+            <div className="w-24 h-1 bg-linear-to-r from-yellow-300 to-yellow-600 mx-auto mb-12 rounded-full"></div>
 
             <p className="text-lg text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               Walking into Yerberia del Mexicano means stepping into a space
@@ -126,9 +126,9 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-linear-to-r from-emerald-700 to-emerald-600 text-white rounded-xl p-12 border-2 border-emerald-500 shadow-lg">
+          <div className="bg-yellow-50  rounded-xl p-12  shadow-lg">
             <h2 className="text-4xl font-black mb-4">Our Team</h2>
-            <p className="text-xl text-emerald-50 leading-relaxed">
+            <p className="text-xl text-slate-700 leading-relaxed">
               Led by <strong>Jose Alfredo Armenta Ibarra</strong>, our team is
               committed to offering personal guidance and helping customers find
               exactly what they need — whether it&apos;s a remedy, a gift, or a

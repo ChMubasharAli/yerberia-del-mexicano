@@ -6,33 +6,33 @@ export default function Contact() {
     <>
       <Navbar />
       <main>
-        <section className="bg-linear-to-r from-emerald-700 to-blue-600 text-white py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:text-center">
+        <section className="py-24 bg-slate-50">
+          <div className="max-w-7xl mb-8 md:mb-16  mx-auto px-4 sm:px-6 lg:px-8 md:text-center">
             <h1 className="text-6xl md:text-7xl font-black mb-4">
               Visit Yerberia del Mexicano
             </h1>
-            <p className="text-xl text-emerald-50">
+            <p className="text-xl text-slate-700">
               We’re here to help you with herbs, remedies, spiritual items,
               cultural goods, and everyday essentials.
             </p>
           </div>
-        </section>
-
-        <section className="py-24 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Contact Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-emerald-600 hover:shadow-2xl transition">
                 <div className="text-emerald-600 text-5xl font-bold mb-4">
-                  📍
+                  👤
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                  Our Location
+                  Contact Person
                 </h2>
                 <p className="text-lg font-semibold text-slate-900 mb-1">
-                  1241 E Broadway Rd
+                  Jose Alfredo Armenta Ibarra
                 </p>
-                <p className="text-lg text-slate-700">Mesa, AZ 85204</p>
+                <p className="text-lg text-slate-700">
+                  Reach out directly for personalized assistance with product
+                  recommendations and inquiries.
+                </p>
               </div>
 
               <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-600 hover:shadow-2xl transition">
@@ -86,20 +86,29 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-linear-to-r from-emerald-700 to-emerald-600 text-white rounded-xl p-12 mb-16 shadow-lg border-2 border-emerald-500">
-              <h2 className="text-3xl font-black mb-3">Contact Person</h2>
-              <p className="text-2xl font-bold text-emerald-50 mb-2">
-                Jose Alfredo Armenta Ibarra
+            <div className="bg-white  rounded-xl p-12 mb-16 shadow-2xl">
+              <h2 className="text-3xl font-black mb-3">Our Location</h2>
+              <p className="text-2xl font-bold text-slate-700 mb-2">
+                1241 E Broadway Rd
               </p>
-              <p className="text-lg text-emerald-50 leading-relaxed">
-                Reach out directly for personalized assistance with product
-                recommendations and inquiries.
+              <p className="text-lg text-slate-700 leading-relaxed">
+                Mesa, AZ 85204
               </p>
+              <div className="mt-12 w-full rounded-2xl  bg-slate-200 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.7855065986713!2d-111.80786592372762!3d33.40754187341389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872bab3c6b4c1a7d%3A0x1b50f1a0a4f4742c!2s1241%20E%20Broadway%20Rd%2C%20Mesa%2C%20AZ%2085204%2C%20USA!5e0!3m2!1sen!2sus!4v1732551135533!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
 
-            <div className="bg-linear-to-r from-emerald-600 to-blue-600 rounded-xl p-12 text-white text-center shadow-lg">
+            <div className="bg-yellow-50 rounded-xl p-12  text-center shadow-lg">
               <h2 className="text-5xl font-black mb-4">Have Questions?</h2>
-              <p className="text-xl text-emerald-50 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Give us a call or stop by. We’re happy to help you find the
                 right products or guide you toward remedies and items
                 you&apos;re looking for.

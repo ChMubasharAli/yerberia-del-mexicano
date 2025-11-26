@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link
             href="/"
-            className="font-bold text-xl sm:text-2xl tracking-tight text-emerald-700"
+            className=" text-xl sm:text-2xl tracking-wider text-black capitalize font-bold"
           >
             Yerberia del Mexicano
           </Link>
@@ -36,8 +36,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition ${
                   isActive(link.href)
-                    ? "text-emerald-600 font-semibold border-b-2 border-emerald-600"
-                    : "text-slate-600 hover:text-emerald-600"
+                    ? "text-black font-semibold border-b-2 border-yellow-300"
+                    : "text-slate-600 hover:text-black"
                 }`}
               >
                 {link.label}
@@ -47,7 +47,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-slate-900 hover:text-emerald-600 transition"
+            className="md:hidden text-slate-900  transition"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -63,8 +63,8 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`px-4 py-2 rounded-lg font-medium transition ${
                     isActive(link.href)
-                      ? "bg-emerald-100 text-emerald-700"
-                      : "text-slate-600 hover:bg-emerald-50 hover:text-emerald-600"
+                      ? "bg-emerald-100 text-black"
+                      : "text-slate-600 hover:bg-emerald-50 "
                   }`}
                 >
                   {link.label}

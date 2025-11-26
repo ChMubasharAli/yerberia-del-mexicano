@@ -276,6 +276,7 @@ export default function Contact() {
               >
                 Call Us Now
               </a>
+              {/* i completed the padding issue  */}
             </div>
           </div>
         </section>

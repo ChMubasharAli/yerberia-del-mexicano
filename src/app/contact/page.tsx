@@ -262,7 +262,9 @@ export default function Contact() {
             </div>
 
             <div className="bg-yellow-50 rounded-xl p-8 md:text-center shadow-lg">
-              <h2 className="text-5xl font-black mb-4">Have Questions?</h2>
+              <h2 className="text-3xl md:text-5xl font-black mb-4">
+                Have Questions?
+              </h2>
               <p className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Give us a call or stop by. We&apos;re happy to help you find the
                 right products or guide you toward remedies and items

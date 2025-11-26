@@ -140,7 +140,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form Section - Added above Our Location */}
-            <div className="bg-white rounded-xl p-12 mb-16 shadow-2xl">
+            <div className="bg-white rounded-xl p-8 mb-16 shadow-2xl">
               <h2 className="text-3xl font-black mb-8 text-slate-900">
                 Send Us a Message
               </h2>
@@ -241,7 +241,7 @@ export default function Contact() {
               </form>
             </div>
 
-            <div className="bg-white rounded-xl p-12 mb-16 shadow-2xl">
+            <div className="bg-white rounded-xl p-8 mb-16 shadow-2xl">
               <h2 className="text-3xl font-black mb-3">Our Location</h2>
               <p className="text-2xl font-bold text-slate-700 mb-2">
                 1241 E Broadway Rd
@@ -261,7 +261,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-yellow-50 rounded-xl p-12 text-center shadow-lg">
+            <div className="bg-yellow-50 rounded-xl p-8 md:text-center shadow-lg">
               <h2 className="text-5xl font-black mb-4">Have Questions?</h2>
               <p className="text-xl text-slate-700 mb-8 max-w-2xl mx-auto leading-relaxed">
                 Give us a call or stop by. We&apos;re happy to help you find the

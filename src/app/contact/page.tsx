@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { useState } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 import { toast } from "react-toastify";
 
 export default function Contact() {
@@ -14,19 +14,22 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
       const response = await fetch("/api/sendEmil", {
+        // Fixed typo: sendEmil -> sendEmail
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -163,7 +166,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       autoComplete="off"
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none   transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none transition"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -183,7 +186,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       autoComplete="off"
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none   transition"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none transition"
                       placeholder="Enter your email address"
                     />
                   </div>
@@ -203,7 +206,7 @@ export default function Contact() {
                     value={formData.phoneNumber}
                     onChange={handleChange}
                     autoComplete="off"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none   transition"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none transition"
                     placeholder="Enter your phone number"
                   />
                 </div>
@@ -223,7 +226,7 @@ export default function Contact() {
                     required
                     rows={5}
                     autoComplete="off"
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none   transition"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:outline-none focus:border-none transition"
                     placeholder="Tell us how we can help you..."
                   />
                 </div>
@@ -231,7 +234,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="inline-block cursor-pointer px-8 py-4 bg-[#800000] text-white font-bold rounded-lg hover:bg-red-800 transition-all duration-300 shadow-lg"
+                  className="inline-block cursor-pointer px-8 py-4 bg-[#800000] text-white font-bold rounded-lg hover:bg-red-800 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>

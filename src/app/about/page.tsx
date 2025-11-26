@@ -48,7 +48,7 @@ export default function About() {
             <h2 className="text-5xl font-black text-slate-900 mb-4 text-center">
               What We Believe In
             </h2>
-            <div className="w-24 h-1 bg-linear-to-r from-yellow-300 to-yellow-600 mx-auto mb-12 rounded-full"></div>
+            <div className="w-24 h-1 bg-[#800000] mx-auto mb-12 rounded-full"></div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-emerald-50 rounded-xl p-8 shadow-lg border-l-4 border-emerald-600 hover:shadow-xl transition">
@@ -94,7 +94,7 @@ export default function About() {
             <h2 className="text-5xl font-black text-slate-900 mb-4 text-center">
               A Look Inside Our Store
             </h2>
-            <div className="w-24 h-1 bg-linear-to-r from-yellow-300 to-yellow-600 mx-auto mb-12 rounded-full"></div>
+            <div className="w-24 h-1 bg-[#800000] mx-auto mb-12 rounded-full"></div>
 
             <p className="text-lg text-slate-700 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
               Walking into Yerberia del Mexicano means stepping into a space

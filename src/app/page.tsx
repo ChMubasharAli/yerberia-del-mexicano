@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section className="relative h-[80vh] min-h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[90vh] min-h-[95vh] flex items-center justify-center overflow-hidden">
           {/* Background image with overlay */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -43,10 +43,10 @@ export default function Home() {
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
                   <a
-                    href="#explore"
-                    className="inline-block px-8 py-4 bg-yellow-400 text-slate-900 font-bold rounded-lg hover:bg-yellow-300 transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:scale-105 transform"
+                    href="mailto:jaaiarmenta@hotmail.com"
+                    className="inline-block px-8 py-4 bg-[#800000] text-white font-bold rounded-lg hover:bg-[#800000] transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:scale-105 transform"
                   >
-                    Explore Collections
+                    Order Now
                   </a>
                   <a
                     href="/contact"
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+          <div className="absolute bottom-0 md:bottom-16 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
             <div className="text-white text-center">
               <p className="text-sm mb-2">Scroll to explore</p>
               <svg
@@ -101,7 +101,7 @@ export default function Home() {
               <h2 className="text-5xl md:text-6xl font-black text-slate-900 mb-4">
                 Our Collections
               </h2>
-              <div className="w-24 h-1 bg-linear-to-r from-yellow-300 to-yellow-600 mx-auto rounded-full"></div>
+              <div className="w-24 h-1 bg-[#800000]  mx-auto rounded-full"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,7 +124,7 @@ export default function Home() {
                     balms, and wellness supplements commonly used in traditional
                     medicine.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
                     statues, and cultural products connected to healing
                     traditions and devotional practices.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
                     Vibrant garments and accessories celebrating authentic
                     cultural traditions.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
 
@@ -192,7 +192,7 @@ export default function Home() {
                     family will love. Our candy section is packed with variety —
                     from lollipops and gummies to nostalgic Mexican favorites.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
 
@@ -211,10 +211,10 @@ export default function Home() {
                     Toys, Party Items & Seasonal Goods
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    We carry kids' toys, small novelties, and party essentials,
-                    perfect for celebrations and everyday fun.
+                    We carry kids&apos; toys, small novelties, and party
+                    essentials, perfect for celebrations and everyday fun.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
 
@@ -233,10 +233,10 @@ export default function Home() {
                     Accessories & Everyday Items
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    From sunglasses to bracelets and household items, you'll
-                    always find something useful and affordable.
+                    From sunglasses to bracelets and household items,
+                    you&apos;ll always find something useful and affordable.
                   </p>
-                  <div className="mt-4 h-1 w-12 bg-linear-to-r from-yellow-300 to-yellow-600  rounded-full"></div>
+                  <div className="mt-4 h-1 w-12 bg-[#800000]  rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -312,7 +312,7 @@ export default function Home() {
                 {/* Right visual element */}
                 <div className="hidden lg:block">
                   <div className="relative">
-                    <div className="bg-gradient-to-br from-yellow-400/20 to-emerald-400/20 rounded-3xl p-12 backdrop-blur-sm border border-white/20">
+                    <div className="bg-black/30 rounded-3xl p-12 backdrop-blur-sm border border-white/20">
                       <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/30 space-y-4">
                         <div className="h-3 w-full bg-yellow-400/30 rounded-full"></div>
                         <div className="h-3 w-4/5 bg-emerald-400/30 rounded-full"></div>

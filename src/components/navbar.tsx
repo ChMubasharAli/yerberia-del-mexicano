@@ -36,7 +36,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition ${
                   isActive(link.href)
-                    ? "text-black font-semibold border-b-2 border-yellow-300"
+                    ? "text-black font-semibold border-b-2 border-[#800000]"
                     : "text-slate-600 hover:text-black"
                 }`}
               >
